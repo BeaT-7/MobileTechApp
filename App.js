@@ -13,7 +13,7 @@ export default function Screen() {
   return (
     <NavigationContainer initialRouteName = 'Home'>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} style={{backgroundColor:'white'}} />
         <Stack.Screen name="Settings" component={SettingScreen} />
       </Stack.Navigator>
     </NavigationContainer>
