@@ -6,6 +6,8 @@ import { StyleSheet, Text, View, Button, TouchableOpacity, Image, Dimensions } f
 export default function App({navigation}) {
   return (
     <React.Fragment>
+
+      {/* setting button */}
       <View style={{backgroundColor: 'white'}}>
         <TouchableOpacity onPress = {() => navigation.navigate('Settings')}>
           <Image
@@ -14,27 +16,36 @@ export default function App({navigation}) {
           />
         </TouchableOpacity>
       </View>
+
+      {/* do what ever here */}
       <View style={styles.container}>
-        <Text>Home screen</Text>
-        <StatusBar style="auto" />
+        {/* CODE_STUFF */}
       </View>
     </React.Fragment>
   );
 }
 
-const screenWidth = Math.round(Dimensions.get('window').width)/6;
+//gets screen parameters
+const screenWidth = Math.round(Dimensions.get('window').width);
+const screenHeight = Math.round(Dimensions.get('window').height); //not used at the moment
 
+//gets ratio for setting button
+const settingBtnRatio = screenWidth/6
+
+
+//Styles
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor:'white',
     justifyContent: 'center',
   },
+  //setting button style
   settingButton:{
     alignSelf: 'flex-end',
-    width:screenWidth,
-    height:screenWidth,
-    position:'relative',
+    width:settingBtnRatio,
+    height:settingBtnRatio,
+    //position:'relative',
     backgroundColor:'white',
     marginRight:'2%',
     marginTop:'2%'
