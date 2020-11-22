@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './Screens/Home';
 import SettingScreen from './Screens/Settings'
 
+
 const Stack = createStackNavigator();
 
 export default function Screen() {
