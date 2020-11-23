@@ -49,8 +49,5 @@ const styles = StyleSheet.create({
     marginRight:'2%',
     marginTop:'2%',
     marginLeft:'90%'
-  },
-  SettingButton:{
-
   }
 });
