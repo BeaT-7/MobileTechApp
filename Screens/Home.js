@@ -8,15 +8,15 @@ export default function App({navigation}) {
     <React.Fragment>
 
       {/* setting button */}
-      <View style={{backgroundColor: 'white'}}>
-        <TouchableOpacity onPress = {() => navigation.navigate('Settings')}>
+      <View style = {{backgroundColor:'white'}}>
+        <TouchableOpacity onPress = {() => navigation.navigate('Settings')} style = {styles.settingButtonImg}>
           <Image
-          style = {styles.settingButton}
+          style = {styles.settingButtonImg}
           source={require('../Resources/icons/settingBtn.png')}
           />
         </TouchableOpacity>
       </View>
-
+      
       {/* do what ever here */}
       <View style={styles.container}>
         {/* CODE_STUFF */}
@@ -41,13 +41,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   //setting button style
-  settingButton:{
+  settingButtonImg:{
     alignSelf: 'flex-end',
     width:settingBtnRatio,
     height:settingBtnRatio,
-    //position:'relative',
     backgroundColor:'white',
     marginRight:'2%',
-    marginTop:'2%'
+    marginTop:'2%',
+    marginLeft:'90%'
+  },
+  SettingButton:{
+
   }
 });
