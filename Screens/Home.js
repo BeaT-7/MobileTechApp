@@ -16,11 +16,12 @@ export default function App({navigation}) {
           />
         </TouchableOpacity>
       </View>
-      
+
       {/* do what ever here */}
       <View style={styles.container}>
         {/* CODE_STUFF */}
       </View>
+      <StatusBar style="auto" />
     </React.Fragment>
   );
 }
