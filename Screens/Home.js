@@ -9,10 +9,6 @@ export default function App({navigation, route}) {
 
       {/* setting button */}
       <View style = {{backgroundColor:'white'}}>
-      /* ieliku piemēru, kā iegūt datus no pirmā screen. Tātad :
-            Izvēlēto studiju programmu iegūst ar {route.params.kurss}
-            Izvēlēto kursu iegūst ar {rotue.params.gads}
-      */
       <Text> Programmas izvēle: {route.params.kurss} Kursa izvēle: {route.params.gads}</Text>
         <TouchableOpacity onPress = {() => navigation.navigate('Settings')} style = {styles.settingButtonImg}>
           <Image

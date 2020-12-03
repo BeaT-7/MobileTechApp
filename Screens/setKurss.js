@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Picker, Button, TouchableOpacity, SafeAreaView, TextInput} from 'react-native';
 import {useState} from 'react';
 
-const FirstPage = ({navigation}) => {
+const setKurss = ({navigation}) => {
   const [userKurss, setUserKurss] = useState();
   const [userGads, setUserGads] = useState();
 
@@ -77,7 +77,7 @@ const FirstPage = ({navigation}) => {
   );
 };
 
-export default FirstPage;
+export default setKurss;
 
 const styles = StyleSheet.create({
   container: {
