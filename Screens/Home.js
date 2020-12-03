@@ -3,12 +3,13 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity, Image, Dimensions } from 'react-native';
 
 
-export default function App({navigation}) {
+export default function App({navigation, route}) {
   return (
     <React.Fragment>
 
       {/* setting button */}
       <View style = {{backgroundColor:'white'}}>
+      <Text> Programmas izvēle: {route.params.kurss} Kursa izvēle: {route.params.gads}</Text>
         <TouchableOpacity onPress = {() => navigation.navigate('Settings')} style = {styles.settingButtonImg}>
           <Image
           style = {styles.settingButtonImg}
