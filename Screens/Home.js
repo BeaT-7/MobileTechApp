@@ -49,8 +49,8 @@ export default function App({navigation, route}) {
       .finally(() => setLoading(false));
   }, []);
 
-
-  return (
+  
+  return(
     <React.Fragment>
       {/* setting button */}
       <View style = {{backgroundColor:'white'}}>
