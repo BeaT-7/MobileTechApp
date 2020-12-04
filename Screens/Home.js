@@ -50,8 +50,6 @@ export default function App({navigation, route}) {
   }, []);
 
 
-
-export default function App({navigation, route}) {
   return (
     <React.Fragment>
       {/* setting button */}
