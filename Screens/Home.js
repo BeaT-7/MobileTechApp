@@ -49,6 +49,7 @@ export default function App({navigation, route}) {
       .finally(() => setLoading(false));
   }, []);
 
+  
   return(
     <React.Fragment>
       {/* setting button */}
