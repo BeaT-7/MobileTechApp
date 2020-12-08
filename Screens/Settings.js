@@ -9,6 +9,7 @@ const setKurss = ({ navigation }) => {
 
   //priekš paziņojumu pogas
   const [isEnabled, setIsEnabled] = useState(false);
+
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
   return (
     <React.Fragment>
