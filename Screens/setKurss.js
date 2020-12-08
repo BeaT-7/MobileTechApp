@@ -61,14 +61,14 @@ const setKurss = ({navigation}) => {
         </View>
         <View>
         <Button
-        title = 'ESMU IZVĒLĒJIES'
-        color = 'black'
-          onPress={() =>
-            navigation.navigate('Home', {
-              kurss: userKurss,
-              gads: userGads,
-            })
-          }
+          title = 'ESMU IZVĒLĒJIES'
+          color = 'black'
+            onPress={() =>
+              navigation.navigate('Home', {
+                kurss: userKurss,
+                gads: userGads,
+              })
+            }
         />
 
       </View>

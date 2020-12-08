@@ -9,7 +9,7 @@ import { StyleSheet, Text, View, Switch } from 'react-native';
 export default function App() {
   //priekš paziņojumu pogas
   const [isEnabled, setIsEnabled] = useState(false);
-  const toggleSwitch = () => setIsEnabled(previousState => 
+  const toggleSwitch = () => setIsEnabled(previousState =>
     !previousState);
 
   return (
@@ -23,9 +23,9 @@ export default function App() {
         ios_backgroundColor="#3e3e3e"
         onValueChange={toggleSwitch}
         value={isEnabled}
-        
+
       />
-   
+
 
     
     </View>
@@ -60,4 +60,3 @@ const padding = StyleSheet.create({
     paddingTop: 1
   }
 })
-
