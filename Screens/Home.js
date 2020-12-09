@@ -90,8 +90,11 @@ export default function App({ navigation, route }) {
     <React.Fragment>
       {/* setting button */}
       <View style = {{backgroundColor:'white'}}>
-        <TouchableOpacity 
-          onPress = {() => navigation.navigate('Settings')} 
+        <TouchableOpacity
+          onPress = {() => navigation.navigate('Settings', {
+            kurss: route.params.kurss,
+            gads: route.params.gads,
+          })}
           style = {styles.settingButtonImg}
         >
           <Image
