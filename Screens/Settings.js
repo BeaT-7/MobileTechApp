@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { StyleSheet, Text, View, Switch, Picker, Button } from "react-native";
 import DropDownPicker from "react-native-dropdown-picker";
 
-const setKurss = ({ navigation, route  }) => {
+const setKurss = ({ navigation, route }) => {
   const [userKurss, setUserKurss] = useState();
   const [userGads, setUserGads] = useState();
 
@@ -14,7 +14,9 @@ const setKurss = ({ navigation, route  }) => {
   return (
     <React.Fragment>
       <View style={pazinojumi.container}>
-        <Text>{route.params.kurss} - {route.params.gads}</Text>
+        <Text>
+          {route.params.kurss} - {route.params.gads}
+        </Text>
       </View>
       <View style={pazinojumi.container}>
         <Text>Paziņojumi</Text>
@@ -30,10 +32,11 @@ const setKurss = ({ navigation, route  }) => {
         />
       </View>
 
-      <View style={zindeks1.con3}>
+      <View>
         <Text>Izvēlies savu studiju programmu:</Text>
 
         <DropDownPicker
+          zIndex={5000}
           items={[
             { label: "BV", value: "BV" },
             { label: "nBV", value: "nBV" },
@@ -73,9 +76,10 @@ const setKurss = ({ navigation, route  }) => {
         />
       </View>
 
-      <View style={zindeks.con3}>
+      <View>
         <Text> Izvēlies savu kursu: </Text>
         <DropDownPicker
+          zIndex={5000}
           items={[
             { label: "1.kurss", value: "1" },
             { label: "2.kurss", value: "2" },
