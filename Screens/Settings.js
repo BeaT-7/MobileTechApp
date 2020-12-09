@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { StyleSheet, Text, View, Switch, Picker, Button } from "react-native";
 import DropDownPicker from "react-native-dropdown-picker";
 
-const setKurss = ({ navigation }) => {
+const setKurss = ({ navigation, route  }) => {
   const [userKurss, setUserKurss] = useState();
   const [userGads, setUserGads] = useState();
 
@@ -13,6 +13,9 @@ const setKurss = ({ navigation }) => {
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
   return (
     <React.Fragment>
+      <View style={pazinojumi.container}>
+        <Text>{route.params.kurss} - {route.params.gads}</Text>
+      </View>
       <View style={pazinojumi.container}>
         <Text>Paziņojumi</Text>
         {/*<StatusBar style="auto" />*/}
