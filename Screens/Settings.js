@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { StyleSheet, Text, View, Switch, Picker, Button } from "react-native";
 import DropDownPicker from "react-native-dropdown-picker";
 
-const setKurss = ({ navigation, route }) => {
+const Settings = ({ navigation, route }) => {
   const [userKurss, setUserKurss] = useState();
   const [userGads, setUserGads] = useState();
 
@@ -15,7 +15,7 @@ const setKurss = ({ navigation, route }) => {
     <React.Fragment>
       <View style={pazinojumi.container}>
         <Text>
-          {route.params.kurss} - {route.params.gads}
+         {route.params.kurss} - {route.params.gads}
         </Text>
       </View>
       <View style={pazinojumi.container}>
@@ -67,6 +67,8 @@ const setKurss = ({ navigation, route }) => {
             setUserGads(usergads);
           }}
           //kka jadabu no pirmas lapas defaultValue={userKurss}
+          //pieliku defaultValue
+          defaultValue = {route.params.kurss}
           placeholder="Izvēlies savu kursu"
           containerStyle={{ height: 40 }}
           style={{ backgroundColor: "#ffffff" }}
@@ -88,6 +90,8 @@ const setKurss = ({ navigation, route }) => {
             { label: "5.kurss", value: "5" },
           ]}
           //kka jadabu no pirmas lapas defaultValue={userKurss}
+          //pieliku defaultValue
+          defaultValue = {route.params.gads}
           placeholder="Izvēlies savu gadu:"
           containerStyle={{ height: 40 }}
           style={{ backgroundColor: "#ffffff" }}
@@ -112,7 +116,7 @@ const setKurss = ({ navigation, route }) => {
     </React.Fragment>
   );
 };
-export default setKurss;
+export default Settings;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
