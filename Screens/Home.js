@@ -71,7 +71,7 @@ export default function App({ navigation, route }) {
     )
   }
 
-  // gets data from API
+  // getss data from API
   useEffect(() => {
     fetch(
       "https://lekcijas.va.lv/lekcijas_android/getLecturesForSelectedDay.php?date=" +

@@ -67,6 +67,7 @@ const Settings = ({ navigation, route }) => {
             setUserGads(usergads);
           }}
           //kka jadabu no pirmas lapas defaultValue={userKurss}
+          //pieliku defaultValue
           defaultValue = {route.params.kurss}
           placeholder="Izvēlies savu kursu"
           containerStyle={{ height: 40 }}
@@ -89,6 +90,7 @@ const Settings = ({ navigation, route }) => {
             { label: "5.kurss", value: "5" },
           ]}
           //kka jadabu no pirmas lapas defaultValue={userKurss}
+          //pieliku defaultValue
           defaultValue = {route.params.gads}
           placeholder="Izvēlies savu gadu:"
           containerStyle={{ height: 40 }}
